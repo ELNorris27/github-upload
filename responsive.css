@@ -1,0 +1,807 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* /////// Layout Styles /////// */
+
+.outer-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.inner-wrapper {
+	width: 1098px;
+	margin: 0 auto;
+}
+
+p {
+	color: #999;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+	color: #282828;
+}
+
+/* /////// Top Navigation /////// */
+
+nav {
+	color: #6b6b6b;
+	display: flex;
+	align-items: center;
+}
+
+.logo a, .nav-links {
+	display: flex;
+	align-items: center;
+}
+
+.nav-links {
+	margin-left: auto;
+	font-size: 1.1rem;
+}
+
+.nav-links a {
+	margin-left: 24px;
+	transition: all 0.3s;
+}
+
+.nav-links a:hover, nav-links a:active {
+	font-weight: 600;
+	font-size: 1.15rem;
+}
+
+.logo div {
+	height: 45px;
+	width:45px;
+	font-size: 40px;
+	color: white;
+	background-color: #282828;
+	border-radius: 50%;
+	align-content: center;
+}
+
+.logo p {
+	font-size: 34px;
+	font-weight: 100;
+	margin: 16px 0;
+}
+
+.selected {
+	font-weight: 600;
+	font-size: 1.15rem;
+}
+
+.hamburger {
+	display: none;
+}
+
+/* ////////// Header /////////// */
+
+header {
+	max-width: 800px;
+	margin: 3em auto 0;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 48px;
+	font-weight: 200;
+	margin-bottom: 16px;
+}
+
+header p {
+	color: #282828;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+
+
+
+/* ////////// Cards /////////// */
+
+.cards {
+	display: grid;
+	grid-template: auto / repeat(3, 350px);
+	grid-gap: 1.5em;
+	margin: 5em auto 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-image {
+	width: 350px;
+	height: 200px;
+	background-color: lightgray;
+}
+
+.card-title {
+	font-size: 24px;
+	margin: 16px 0 12px;
+	color: #282828;
+	font-weight: 500;
+}
+
+.card p:nth-of-type(2) {
+	max-width: 32ch;
+	font-size: 0.95rem;
+}
+
+.card-1-img {
+	background: url("img/interior-1.jpg") center no-repeat;
+	background-size: contain;
+}
+.card-2-img {
+	background: url("img/interior-2.jpg") center no-repeat;
+	background-size: contain;
+}
+.card-3-img {
+	background: url("img/interior-3.jpg") center no-repeat;
+	background-size: contain;
+}
+
+
+
+/* ////////// Employees /////////// */
+
+.employees {
+	display: grid;
+	grid-template: auto auto / 89px repeat(4, 150px) 89px;
+	grid-gap: 4em;
+	align-items: center;
+	justify-items: center;
+	margin: 5em auto 0;
+}
+
+
+.employees h2 {
+	font-size: 40px;
+	font-weight: 200;
+	margin-bottom: 16px;
+}
+
+.team-intro {
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	grid-row: 1/2;
+	grid-column: 1/7;
+}
+
+.team-intro p {
+	font-size: 0.95rem;
+}
+
+.employee {
+	display: flex;
+	flex-direction: column;
+	max-width: 150px;
+}
+
+.employee-1, .employee-2, .employee-3, .employee-4 {
+	grid-row: 2/3;
+}
+
+.employee-1 {
+	grid-column: 2/3;
+}
+
+.employee-2 {
+	grid-column: 3/4;
+}
+
+.employee-3 {
+	grid-column: 4/5;
+}
+
+.employee-4 {
+	grid-column: 5/6;
+	background: url(img/mark.jpg) cover center no-repeat;
+}
+
+.employee-image {
+	width: 150px;
+	height: 150px;
+	background-color: lightgray;
+	margin-bottom: 20px;
+}
+
+.employee-1-img {
+	background: url(img/melissa.jpg) center no-repeat;
+}
+
+.employee-2-img {
+	background: url(img/frank.jpg) center no-repeat;
+}
+
+.employee-3-img {
+	background: url(img/jane.jpg) center no-repeat;
+}
+
+.employee-4-img {
+	background: url(img/mark.jpg) center no-repeat;
+}
+
+.employee p {
+	font-weight: 600;
+	font-size: 0.95rem;
+	margin: 0;
+	color: #282828;
+}
+
+.social-icons {
+	display: flex;
+	margin-top: 12px;
+}
+
+.social-icons img {
+	height: 21px;
+	width: 20px;
+	margin-right: 14px;
+}
+
+.last img, .next img {
+	height: 35px;
+}
+
+.last {
+	justify-self: start;
+}
+
+.next {
+	justify-self: end;
+}
+
+.social-links {
+	padding: 1.5em 0;
+	padding: 1.5em 0;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+
+
+
+/* ////////// Footer /////////// */
+
+footer {
+	color: #777;
+	background-color: #282828;
+}
+
+.footer-wrapper {
+	max-width: 1000px;
+	margin: 5em auto 0;
+}
+
+.social-links, .social-link a {
+	display: flex;
+	align-items: center;
+}
+
+.social-link {
+	margin-right: 20px;
+}
+
+.social-link p {
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.social-link img {
+	height: 25px;
+	margin-right: 6px;
+}
+
+.contact-info {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.info-title {
+	color: white;
+	font-size: 0.8rem;
+	font-weight: 500;
+	padding-bottom: 11px;
+}
+
+.contact-info p {
+	font-size: 0.85rem;
+	margin: 7px 0;
+}
+
+.contact-info {
+	display: grid;
+	grid-template: auto / repeat(3, auto);
+	margin-top: 3em;
+}
+
+hr {
+	width: 100%;
+	border: 0 none;
+	height: 0.25px;
+	background-color: #585858;
+	margin-top: 2em;
+}
+
+.legal {
+	text-align: center;
+	font-size: 0.7rem;
+	padding: 1em 0;
+}
+
+.legal p {
+	margin: 4px 0;
+}
+
+
+
+
+
+/* ////////// Media Queries /////////// */
+
+@media screen and (max-width: 1200px) {
+	.outer-wrapper, .inner-wrapper {
+		max-width: 950px;
+	}
+	
+	header {
+		max-width: 700px;
+	}
+	
+	.cards {
+		grid-template: auto / repeat(3, 306px);
+		grid-gap: 1em;
+		max-width: 950px;
+		margin: 5em auto 0;
+	}
+	
+	.card-title {
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+	
+	.card-image {
+		width: 306px;
+		height: 175px;
+		background-color: lightgray;
+	}
+	
+	.card p:nth-of-type(2) {
+		max-width: 26ch;
+		font-size: 0.95rem;
+		margin-top: 12px
+	}
+	
+	.employees {
+		grid-template: auto auto / 55px repeat(4, 150px) 55px;
+		grid-gap: 3em;
+		margin: 5em auto 0;
+	}
+	
+	.team-intro {
+		max-width; 600px;
+	}
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.outer-wrapper, .inner-wrapper {
+		max-width: 710px;
+	}
+	
+	.logo div {
+		height: 40px;
+		width: 40px;
+		font-size: 35px;
+	}
+
+	.logo p {
+		margin: 14px 0;
+	}
+	
+	header {
+		max-width: 600px;
+	}
+	
+	header h1 {
+		font-size: 44px;
+		margin-bottom: 14px;
+	}
+
+	header p {
+		color: #282828;
+		font-size: 0.9rem;
+		font-weight: 500;
+	}
+	
+	.cards {
+		grid-template: auto auto/ repeat(2, 347px);
+		grid-gap: 1em;
+		max-width: 710px;
+		margin: 5em auto 0;
+	}
+	
+	.card-image {
+		width: 347px;
+		height: 200px;
+	}
+	
+	.card-image#cardThreeImg {
+		background: url("img/interior-4.jpg");
+		width: 710px;
+	}
+	
+	.card article {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.card p:nth-of-type(2) {
+		max-width: 32ch;
+		margin: 12px auto 1.5em;
+	}
+	
+	#cardThree p:nth-of-type(2) {
+		max-width: 56ch;
+	}
+	
+	#cardThree {
+		grid-row: 2/3;
+		grid-column: 1/3;
+		width:100%;
+	}
+	
+	.employees {
+		grid-template: auto auto / 40px repeat(4, 125px) 40px;
+		grid-gap: 1.6em;
+		margin: 5em auto 0;
+	}
+	
+	.employees h2 {
+		font-size: 36px;
+		font-weight: 200;
+		margin-bottom: 16px;
+	}
+	
+	.team-intro {
+		max-width: 550px;
+	}
+	
+	.team-intro p {
+		font-size: 0.9rem;
+	}
+	
+	.employee-image {
+		width: 125px;
+		height: 125px;
+	}
+	
+	.employee p {
+		font-size: 0.85rem;
+	}
+	
+	.last-img, .next-img {
+		height: 30px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 768px) {
+	
+	.outer-wrapper {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	.inner-wrapper {
+		max-width: 432px;
+	}
+	
+	.nav-links {
+		margin-left: auto;
+		font-size: 0.95rem;
+	}
+
+	.nav-links a {
+		margin-left: 14px;
+	}
+
+	.nav-links a:hover, nav-links a:active {
+		font-size: 1rem;
+	}
+
+	.logo div {
+		height: 35px;
+		width: 35px;
+		font-size: 30px;
+		color: white;
+	}
+
+	.logo p {
+		font-size: 26px;
+		margin: 14px 0;
+	}
+
+	.selected {
+		font-size: 1rem;
+	}
+	
+	header {
+		max-width: 400px;
+	}
+	
+	header h1 {
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+
+	header p {
+		color: #282828;
+		font-size: 0.85rem;
+		margin: 6px auto 18px
+	}
+	
+	.cards {
+		grid-template: repeat(3, auto) / 432px;
+		grid-gap: 0;
+		max-width: 432px;
+		margin: 3.5em auto 0;
+	}
+	
+	.card-image {
+		width: 432px;
+		height: 246px;
+	}
+	
+	.card-image#cardThreeImg {
+		width: 432px;
+	}
+	
+	.card article {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.card p:nth-of-type(2) {
+		max-width: 40ch;
+		margin: 8px auto 2.5em;
+	}
+	
+	#cardThree p:nth-of-type(2) {
+		max-width: 40ch;
+	}
+	
+	#cardThree {
+		grid-row: 3/4;
+		grid-column: 1/2;
+		width:100%;
+	}
+	
+	.employees {
+		grid-template: repeat(3, auto) / 50px repeat(2, 130px) 50px;
+		grid-gap: 1.5em;
+		margin: 3.5em auto 0;
+	}
+	
+	.employee {
+		grid-row: auto;
+	}
+	
+	.employees h2 {
+		font-size: 34px;
+		margin-bottom: 16px;
+	}
+	
+	.team-intro {
+		max-width: 400px;
+		grid-column: 1/5;
+	}
+	
+	.team-intro p {
+		font-size: 0.85rem;
+	}
+	
+	.employee-image {
+		width: 130px;
+		height: 130px;
+	}
+	
+	.employee p {
+		font-size: 0.9rem;
+	}
+	
+	.last-img, .next-img {
+		height: 30px;
+	}
+	
+	.last, .next {
+		grid-row: 2/4;
+	}
+	
+	.next {
+		grid-column: 4/5;
+	}
+	
+	.employee-3 {
+		grid-row: 3/4;
+		grid-column: 2/3;
+	}
+	
+	.employee-4 {
+		grid-row: 3/4;
+		grid-column: 3/4;
+	}
+	
+	.footer-wrapper {
+		max-width: 449px;
+		margin: 4em auto 0;
+	}
+
+	.social-links, .social-link a {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.social-link {
+		margin-right: 18px;
+	}
+
+	.social-link p {
+		text-transform: uppercase;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
+	.social-link img {
+		height: 20px;
+		margin-right: 6px;
+	}
+
+	.contact-info {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+	}
+	
+	.info {
+		padding-bottom: 1em;
+	}
+
+	.info-title {
+		color: white;
+		font-size: 0.8rem;
+		font-weight: 500;
+		padding-bottom: 11px;
+	}
+
+	.contact-info p {
+		font-size: 0.8rem;
+		margin: 7px 0;
+	}
+	
+}
+
+
+@media screen and (max-width: 480px) {
+	
+	.home, .about, .contact {
+		display: none;
+	}
+	
+	.hamburger {
+		width: 35px;
+		height: 35px;
+		display: block;
+	}
+	
+	.inner-wrapper {
+		max-width: 330px;
+	}
+	
+	.cards {
+		grid-template: repeat(3, auto) / 330px;
+		grid-gap: 0;
+		max-width: 330px;
+		margin: 3em auto 0;
+	}
+	
+	.card-image {
+		width: 330px;
+		height: 187px;
+	}
+	
+	.card-image#cardThreeImg {
+		width: 330px;
+	}
+	
+	.card p:nth-of-type(2) {
+		max-width: 32ch;
+		margin: 8px auto 2.5em;
+		font-size: 0.85rem;
+	}
+	
+	#cardThree p:nth-of-type(2) {
+		max-width: 30ch;
+	}
+	
+	#cardThree {
+		grid-row: 3/4;
+		grid-column: 1/2;
+		width:100%;
+	}
+	
+	.employees {
+		grid-template: repeat(3, auto) / 30px repeat(2, 110px) 30px;
+		grid-gap: 1em;
+		margin: 3em auto 0;
+	}
+	
+	.employee {
+		grid-row: auto;
+		height: 227px;
+	}
+	
+	.employees h2 {
+		font-size: 34px;
+		margin-bottom: 16px;
+	}
+	
+	.team-intro {
+		max-width: 300px;
+		grid-column: 1/5;
+	}
+	
+	.team-intro p {
+		font-size: 0.85rem;
+	}
+	
+	.employee-image {
+		width: 110px;
+		height: 110px;
+	}
+	
+	.employee p {
+		font-size: 0.8rem;
+	}
+	
+	.last img, .next img {
+    height: 25px;
+	}
+	
+	.social-icons {
+		margin-top: auto;
+	}
+	
+	.social-icons img {
+		height: 18px;
+		width: 17px;
+	}
+	
+	
+	
+}
+
+
+
+
+
